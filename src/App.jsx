@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import Welcome from "./Components/Welcome";
+import Support from "./Components/Support";
+// class Welcome extends React.Component {
+//   constructor(props) {
+//     super(props);
+//   }
+//   render() {
+//     return <h1>Meet the {this.props.name} </h1>;
+//   }
 
-class Welcome extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return <h1>Meet the {this.props.name} </h1>;
-  }
-}
+// }
 
 function App() {
   const name = "StarGazers";
@@ -19,8 +21,8 @@ function App() {
           <hgroup>
             <img src="images/group.svg" alt="StarGazers Group" />
             <Welcome name="stars" />
-            <Welcome name="starGazers" />
-            <Welcome name="starGallery" />
+            {/* <Welcome name="starGazers" />
+            <Welcome name="starGallery" /> */}
             <h1>
               Meet the <i style={{ color: "SteelBlue" }}>{name}</i>
             </h1>
@@ -34,6 +36,7 @@ function App() {
             <button className="Outline" onClick={() => alert("Hi there")}>
               Click me
             </button>
+            <Support />
           </hgroup>
         </article>
       </div>
