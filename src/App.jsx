@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import Welcome from "./Components/Welcome";
 import Support from "./Components/Support";
+import ListCast from "./Components/ListCast";
+
 // class Welcome extends React.Component {
 //   constructor(props) {
 //     super(props);
@@ -33,9 +35,10 @@ function App() {
               are known for their enthusiasm for science, for their love of fun,
               and their dedication to education.
             </p>
-            <button className="Outline" onClick={() => alert("Hi there")}>
+            <ListCast />
+            {/* <button className="Outline" onClick={() => alert("Hi there")}>
               Click me
-            </button>
+            </button> */}
             <Support />
           </hgroup>
         </article>
